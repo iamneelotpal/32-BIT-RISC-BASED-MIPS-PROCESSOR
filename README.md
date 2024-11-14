@@ -74,9 +74,8 @@ The instruction execution cycle contains the following 5 stages in order:
 ## Non Pipelined DataPath  
 ![non pipelined data path](https://github.com/user-attachments/assets/18e5afa2-491b-4d4e-ba83-bcbc56fd1f2e)
 
-## Pipelined DataPath  
-![pipelined data path](https://github.com/user-attachments/assets/ccbed9f0-b6f6-487a-ab5a-cb6266f64384)
-
+## Pipelined DataPath 
+<img src="https://github.com/user-attachments/assets/ccbed9f0-b6f6-487a-ab5a-cb6266f64384" width="200" />
 
 ## Example Program Testbench Code  
 Steps:  

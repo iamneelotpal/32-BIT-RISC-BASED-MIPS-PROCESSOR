@@ -1,6 +1,6 @@
 # 32 Bit RISC based MIPS Processor
 
-## ▫️ MIPS32  
+## MIPS32  
 - 32 x 32 bit GPRs [R0 to R31]  
 - R0 hardwired to logic0  
 - 32 bit Program Counter (PC)  
@@ -9,7 +9,7 @@
 - Only Load and Store instructions can access memory  
 - We assume memory word size is 32 bits (word addressable)
   
-## ▫️ Addressing Modes  
+## Addressing Modes  
 | Addressing Mode | Example Instruction |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Register addressing | ADD R1,R2,R3      |
@@ -53,7 +53,7 @@ J Loop // Branch to Loop unconditionally
 ```
 HLT // Halt execution 
 ```
-## ▫️ Instruction Encoding  
+## Instruction Encoding  
 ![instruction encoding](https://github.com/user-attachments/assets/7cf3db4e-421e-4c03-b74a-6327d3b0537a)
 
 - shamt : shift amount, funct : opcode extension for additional functions.
@@ -62,7 +62,7 @@ HLT // Halt execution
 - While decoding is going on, we can prefetch the registers in parallel, which may or may not be used later. 
 - Similarly, the 16-bit and 26-bit immediate data are retrieved and signextended to 32-bits in case they are required later. 
 
-## ▫️ Stages of Execution  
+## Stages of Execution  
 The instruction execution cycle contains the following 5 stages in order:  
 1. IF : Instruction Fetch  
 2. ID : Instruction Decode / Register Fetch  
@@ -71,14 +71,14 @@ The instruction execution cycle contains the following 5 stages in order:
 5. WB : Register Write-back  
 - micro operations not shown here.
   
-## ▫️ Non Pipelined DataPath  
+## Non Pipelined DataPath  
 ![non pipelined data path](https://github.com/user-attachments/assets/18e5afa2-491b-4d4e-ba83-bcbc56fd1f2e)
 
-## ▫️ Pipelined DataPath  
+## Pipelined DataPath  
 ![pipelined data path](https://github.com/user-attachments/assets/ccbed9f0-b6f6-487a-ab5a-cb6266f64384)
 
 
-## ▫️ Example Program Testbench Code  
+## Example Program Testbench Code  
 Steps:  
 1. Initialize register R1 with 10.  
 2. Initialize register R2 with 20.  
@@ -111,10 +111,10 @@ R4 - 30
 R5 - 55  
 ```  
  
-## ▫️ Known problems and issues  
+## Known problems and issues  
 Following pipelining hazards are present in the given design :  
 - Structural Hazards due to shared hardware.  
 - Data Hazards due to instruction data dependency.  
 - Control hazards due to branch instructions.  
-## ▫️ References  
+## References  
 [NPTEL \& IIT KGP 'Hardware Modeling using Verilog'- Prof. Indranil Sengupta](https://nptel.ac.in/courses/106105165)

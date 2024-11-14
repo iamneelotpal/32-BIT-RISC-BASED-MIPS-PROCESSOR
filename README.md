@@ -1,1 +1,1 @@
-# 32-BIT-RISC-BASED-MIPS-PROCESSOR
+# 32 Bit RISC based MIPS Processor

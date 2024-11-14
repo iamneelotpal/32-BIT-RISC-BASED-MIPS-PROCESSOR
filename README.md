@@ -17,7 +17,7 @@
 | Base addressing      | LW R5, 150(R7)    |
 | PC relative addressing  | BEQZ R3, Label   |
 | Pseudo-direct addressing | J Label      |
-## ▫️ Instructions Considered  
+## Instructions Considered  
 Not all instructions of MIPS32 are considered in this design, for implementation sake only a few instructions are considered, mentioned below:  
 - Load and Store Instructions  
 ```

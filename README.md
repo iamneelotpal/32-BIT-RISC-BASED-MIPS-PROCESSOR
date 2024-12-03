@@ -97,6 +97,7 @@ Instructions :
 | ADD R5,R4,R3 | 000000 00100 00011 00101 00000 000000  | 00832800  |  
 | HLT | 111111 00000 00000 00000 00000 000000  | fc000000  |  
 
+
  
 Waveform :  
 ![output waveform](https://github.com/user-attachments/assets/f6bfb2c6-4986-4da7-817a-31fc8b622564)
